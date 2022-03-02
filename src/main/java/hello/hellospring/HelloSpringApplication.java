@@ -9,7 +9,5 @@ public class HelloSpringApplication {
 		SpringApplication.run(HelloSpringApplication.class, args);
 
 		HelloController controller0 = new HelloController();
-
-		System.out.println(controller0.getHello());
 	}
 }
