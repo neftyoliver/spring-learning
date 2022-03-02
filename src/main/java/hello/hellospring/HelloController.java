@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
+    @GetMapping("")
+    public String getDefault() {
+        return "Hello, world!";
+    }
+
     @GetMapping("/{value}")
-    public String getHello(@PathVariable("value") String value) {
+    public String getUrlToView(@PathVariable("value") String value) {
         return value;
     }
 }
