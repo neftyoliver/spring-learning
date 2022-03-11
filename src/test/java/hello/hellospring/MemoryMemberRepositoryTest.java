@@ -16,7 +16,7 @@ public class MemoryMemberRepositoryTest {
     }
 
     @Test
-    public void testSave() {
+    public void save() {
         // 받을 데이터의 예시
         Member member1 = new Member();
         member1.setName("Oliver");
@@ -30,7 +30,7 @@ public class MemoryMemberRepositoryTest {
     }
 
     @Test
-    public void testFindByName() {
+    public void findByName() {
         // 받을 데이터
         Member member1 = new Member();
         member1.setName("spring1");
@@ -49,7 +49,7 @@ public class MemoryMemberRepositoryTest {
     }
 
     @Test
-    public void testFindAll() {
+    public void findAll() {
         // 받을 데이터
         Member member1 = new Member();
         member1.setName("spring1");
