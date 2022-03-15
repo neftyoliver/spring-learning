@@ -1,12 +1,17 @@
 package hello.hellospring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Optional;
 
+//@Service
 public class MemberService {
     MemberRepository memberRepository;
 
-    public MemberService(MemoryMemberRepository pMemberRepository) {
+    //@Autowired
+    public MemberService(MemberRepository pMemberRepository) {
         this.memberRepository = pMemberRepository;
     }
 
