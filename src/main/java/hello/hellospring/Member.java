@@ -1,6 +1,11 @@
 package hello.hellospring;
 
+import javax.persistence.*;
+
+@Entity
 public class Member {
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private String name;
 
